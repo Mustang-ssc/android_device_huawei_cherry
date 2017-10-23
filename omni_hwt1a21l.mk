@@ -15,7 +15,7 @@
 ## Specify phone tech before including full_phone
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-$(call inherit-product, device/huawei/cherry/full_hwt1a21l.mk)
+$(call inherit-product, device/huawei/hwt1a21l/full_hwt1a21l.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
