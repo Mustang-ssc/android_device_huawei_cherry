@@ -43,7 +43,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 --tags_offset 0x01e00000 --dt $(DEVICE_PATH)/dt.img
-TARGET_PREBUILT_KERNEL := device/huawei/cherry/recovery/kernel
+TARGET_PREBUILT_KERNEL := device/huawei/hwt1a21l/recovery/kernel
 
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
