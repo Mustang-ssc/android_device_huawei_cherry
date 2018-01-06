@@ -1,1 +1,1 @@
-# android_device_huawei_cherry_kirin (Honor 4X Kirin)
+# android_device_huawei_hwt1a21l (Mediapad T1 10)
