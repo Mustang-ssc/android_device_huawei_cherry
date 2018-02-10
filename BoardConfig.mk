@@ -64,6 +64,7 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TWHAVE_SELINUX := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 #TW_CUSTOM_BATTERY_PATH := "/sys/devices/battery.0/power_supply/Battery"
+TW_NO_BATT_PERCENT := true
 TW_MAX_BRIGHTNESS := 255
 BOARD_HAS_NO_SELECT_BUTTON := true
 TW_SCREEN_BLANK_ON_BOOT := true
