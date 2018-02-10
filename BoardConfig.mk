@@ -69,4 +69,3 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_EXCLUDE_SUPERSU := true
 TW_INPUT_BLACKLIST := "accelerometer\x0alis3dh-accel"
-TARGET_USES_LOGD := true
