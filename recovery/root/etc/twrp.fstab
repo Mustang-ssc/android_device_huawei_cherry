@@ -5,11 +5,16 @@
 # mount point   fstype  device					device2			flags
 /boot		emmc	/dev/block/bootdevice/by-name/boot
 /cache		ext4	/dev/block/bootdevice/by-name/cache
-/cust		ext4	/dev/block/bootdevice/by-name/cust
+/cust		ext4	/dev/block/bootdevice/by-num/cust  flags=display="Cust";backup=1
 /data		ext4	/dev/block/bootdevice/by-name/userdata
 /misc		emmc	/dev/block/bootdevice/by-name/misc
-/recovery	emmc	/dev/block/bootdevice/by-name/recovery				flags=backup=1
+/recovery	emmc	/dev/block/bootdevice/by-name/recovery  flags=backup=1
 /system		ext4	/dev/block/bootdevice/by-name/system
+/oeminfo	emmc    /dev/block/bootdevice/by-name/oeminfo   flags=display="OEMinfo";backup=1
+
+/efs1         emmc   /dev/block/bootdevice/by-name/modem flags=backup=1;display="EFS"
+/efs2         emmc   /dev/block/bootdevice/by-name/modemst1 flags=backup=1;subpartitionof=/efs1
+/efs3         emmc   /dev/block/bootdevice/by-name/modemst2 flags=backup=1;subpartitionof=/efs1
 
 # Removable storage
 /external_sd	vfat	/dev/block/mmcblk1p1			/dev/block/mmcblk1	flags=display="Micro SDcard";storage;wipeingui;removable
